@@ -22,9 +22,9 @@
 <script type="text/html" id="tmpl_sizes">
 
     <div class="font-sizes">
-        <div data-text="10" class="font-size">10</div>
-		<div data-text="12" class="font-size">12</div>
-		<div data-text="14" class="font-size">14</div>
+        <div style="font-size: 10px" data-text="10" class="font-size">10</div>
+		<div style="font-size: 12px" data-text="12" class="font-size">12</div>
+		<div style="font-size: 14px" data-text="14" class="font-size">14</div>
 		
 		
    
@@ -36,7 +36,7 @@
 <script type="text/javascript">
     (function() {
         var $list = $($('#tmpl_sizes').html());
-        var $icon = $('<a><div>SIZEs</div></a>');
+        var $icon = $('<a><div>SIZE</div></a>');
         var $inp = $('#kiwi .controlbox .inp');
 
         var control = kiwi.components.ControlInput();
