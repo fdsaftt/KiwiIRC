@@ -11,7 +11,7 @@
 
     #kiwi .font-sizes .font-size {
         display: inline-block;
-        width: 15px;
+        width: 25px;
         height: 15px;
         cursor: pointer;
 		color:blue;
@@ -68,6 +68,13 @@
                 });
         });
 
+		 $list.on('click', '.font-size', function(event) {
+            event.stopPropagation();
+
+            var font = $(this).data('text');
+            
+            $('#kiwi textarea').css({"font-size":"2"});
+        });
 
         // Closing style changer...
         $(document).on('click', function() {
