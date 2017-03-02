@@ -72,8 +72,8 @@
             event.stopPropagation();
 
             var font = $(this).data('text');
-            
-            $('#kiwi textarea').css({"font-size":"2"});
+            console.log('changing font');
+            $('#kiwi').css({"font-size":font+'px'});
         });
 
         // Closing style changer...
