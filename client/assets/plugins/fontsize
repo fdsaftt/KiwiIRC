@@ -1,0 +1,113 @@
+<style>
+    #kiwi .style-grid {
+        position: absolute;
+        display: block;
+        z-index: 1000;
+
+        background: #121314;
+        padding: 2px;
+        width: 120px;
+
+        border-radius: 3px;
+    }
+
+    #kiwi .style-colours { overflow: hidden; }
+    #kiwi .style-colour {
+        width: 25%;
+        height: 27px;
+        display: block;
+        float: left;
+        cursor: pointer;
+    }
+    #kiwi .style-color-selected {
+        -webkit-box-shadow: inset 0px 0px 5px 0px rgba(255, 255, 255, 0.75);
+        -moz-box-shadow:    inset 0px 0px 5px 0px rgba(255, 255, 255, 0.75);
+        box-shadow:         inset 0px 0px 5px 0px rgba(255, 255, 255, 0.75);
+        z-index: 10;
+        position: relative;
+    }
+
+    #kiwi .font-sizes {
+        margin: 10px 0;
+        overflow: hidden;
+    }
+
+    #kiwi .font-size {
+        width: 33%;
+        cursor: pointer;
+        display: block;
+        float: left;
+        text-align: center;
+    }
+    #kiwi .font-size-bold { font-weight: bold; }
+    #kiwi .font-size-italic { font-style: italic; }
+    #kiwi .font-size-underline { text-decoration: underline; }
+    #kiwi .style-reset {
+        color: #D6D6D6;
+        font-size: 20px;
+        text-align: right;
+        display: block;
+        cursor: pointer;
+        margin: 5px 6px 10px;
+    }
+</style>
+
+<script type="text/html" id="tmpl_sizes">
+
+    <div class="font-sizes">
+        <a class="font-size">10</a>
+		<a class="font-size">12</a>
+		<a class="font-size">14</a>
+		<a class="font-size">16</a>
+		<a class="font-size">18</a>
+		<a class="font-size">20</a>
+		<a class="font-size">22</a>
+		
+   
+    </div>
+
+
+</script>
+
+<script type="text/javascript">
+    (function() {
+        var $list = $($('#tmpl_sizes').html());
+        var $icon = $('<a>SIZE</a>');
+        var $inp = $('#kiwi .controlbox .inp');
+
+        var control = kiwi.components.ControlInput();
+        control.addPluginIcon($icon);
+
+       
+
+        var updateStyles = function() {
+            
+        };
+
+
+    
+        // Opening style changer...
+        $icon.on('click', function(event) {
+            event.stopPropagation();
+
+            $list.appendTo($('#kiwi'))
+                .show()
+                .css({
+                    bottom: ($('.controlbox').outerHeight()) + 'px',
+                    right: '10px'
+                });
+        });
+
+
+        // Closing style changer...
+        $(document).on('click', function() {
+            $list.hide();
+        });
+
+
+      
+
+
+
+    })();
+</script>
