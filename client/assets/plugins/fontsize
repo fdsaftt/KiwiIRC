@@ -54,6 +54,7 @@
 
 <script type="text/html" id="tmpl_sizes">
 
+<p>test</p>
     <div class="font-sizes">
         <a class="font-size">10</a>
 		<a class="font-size">12</a>
@@ -72,7 +73,7 @@
 <script type="text/javascript">
     (function() {
         var $list = $($('#tmpl_sizes').html());
-        var $icon = $('<a>SIZE</a>');
+        var $icon = $('<a><div>SIZE</div></a>');
         var $inp = $('#kiwi .controlbox .inp');
 
         var control = kiwi.components.ControlInput();
