@@ -4,7 +4,7 @@
         display: block;
         z-index: 1000;
 
-        background: #121314;
+        background: #ccc;
         padding: 5px;
         width: 460px;
     }
@@ -14,6 +14,7 @@
         width: 15px;
         height: 15px;
         cursor: pointer;
+		color:blue;
         margin-right: 5px;
     }
 	
@@ -25,6 +26,11 @@
         <div style="font-size: 10px" data-text="10" class="font-size">10</div>
 		<div style="font-size: 12px" data-text="12" class="font-size">12</div>
 		<div style="font-size: 14px" data-text="14" class="font-size">14</div>
+		<div style="font-size: 16px" data-text="16" class="font-size">16</div>
+		<div style="font-size: 18px" data-text="18" class="font-size">18</div>
+		<div style="font-size: 20px" data-text="20" class="font-size">20</div>
+		<div style="font-size: 22px" data-text="22" class="font-size">22</div>
+		<div style="font-size: 24px" data-text="24" class="font-size">24</div>
 		
 		
    
