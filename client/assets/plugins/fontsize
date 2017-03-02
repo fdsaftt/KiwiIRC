@@ -72,6 +72,8 @@
             var font = $(this).data('text');
             console.log('changing font');
             $('#kiwi').css({"font-size":font+'px'});
+			$('textarea').css({"font-size":font+'px'});
+			$('.nick').css({"font-size":font+'px'});
         });
 
         // Closing style changer...
