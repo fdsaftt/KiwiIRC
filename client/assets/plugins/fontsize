@@ -74,8 +74,14 @@
             $('#kiwi').css({"font-size":font+'px'});
 			$('textarea').css({"font-size":font+'px'});
 			$('.nick').css({"font-size":font+'px'});
-			$(".container1").scrollTop($(".container1")[0].scrollHeight);
-			$(".container1").scrollTop($(".container1")[0].scrollHeight);
+			
+			setTimeout(function (){
+
+  $(".container1").scrollTop($(".container1")[0].scrollHeight);
+
+}, 1000);
+			
+			
         });
 
         // Closing style changer...
