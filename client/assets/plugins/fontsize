@@ -52,6 +52,16 @@
             
         };
 
+window.addEventListener('resize', function(event){
+
+setTimeout(function (){
+
+  $(".container1").scrollTop($(".container1")[0].scrollHeight);
+
+}, 200);
+
+
+});
 
     
         // Opening style changer...
@@ -79,7 +89,7 @@
 
   $(".container1").scrollTop($(".container1")[0].scrollHeight);
 
-}, 1000);
+}, 200);
 			
 			
         });
